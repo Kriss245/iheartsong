@@ -21,7 +21,7 @@ Dalam perancangan website ini, kami menggunakan PHP versi 7.4 dan Framework Lara
 ## Screenshot
 ### Landing Page
 <div style="display:flex;justify-content:space-between;">
-  <img src="https://i.imgur.com/xWgasT6.jpg" style="width:32%;" />
+  <img src="https://i.imgur.com/xWgasT6.jpg" style="width:100%;" />
 </div> ㅤㅤ
 
 ### Home
