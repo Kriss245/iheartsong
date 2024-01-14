@@ -1,0 +1,81 @@
+body {
+    overflow: hidden; /* Mencegah scrolling */
+    background-image: url('/img/Music 1.jpg'); /* Sesuaikan path dengan lokasi gambar */
+    background-size: cover; /* Untuk menyesuaikan ukuran gambar dengan layar */
+    background-position: justify; /* Menentukan posisi gambar di tengah layar */
+}
+
+/* Atur tata letak konten */
+.container {
+    background-color: transparent; /* Warna latar belakang */
+    border-radius: 10px; /* Sudut border */
+    padding: 20px; /* Padding untuk konten */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+/* style.css */
+
+/* Atur tampilan teks */
+h1,
+h2,
+p {
+    color: #333; /* Warna teks */
+    font-family: 'Raleway', sans-serif; /* Font family */
+    /* Tambahan gaya teks lainnya */
+}
+
+/* Keyframes untuk animasi berkedip */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Mengaplikasikan animasi ke elemen dengan kelas "animated-text" */
+.animated-text {
+    font-size: 45px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(11, 11, 11, 0.3);
+    /* Jika ingin menambahkan efek lain, seperti gradient, bisa juga ditambahkan di sini */
+
+    animation: welcome-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes welcome-animation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Efek hover pada teks */
+h1:hover,
+h2:hover {
+    color: #ff6846; /* Ubah warna saat dihover */
+    cursor: pointer; /* Ubah kursor menjadi pointer */
+}
+
+/* Gaya tambahan pada kalimat tentang musik */
+p.music-description {
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.paint-emotions {
+    font-family: ' Montserrat', sans-serif; /* Ganti 'Your Chosen Font' dengan nama font yang diinginkan */
+    font-size: 28px; /* Ubah ukuran font sesuai kebutuhan */
+    margin-top: 8px;
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}

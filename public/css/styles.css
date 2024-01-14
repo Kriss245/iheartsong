@@ -1,0 +1,140 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Mencegah scrolling */
+    
+    /* Menambahkan gambar sebagai latar belakang */
+    background-image: url('/img/Music.jpg'); /* Sesuaikan path dengan lokasi gambar */
+    background-size: cover; /* Untuk menyesuaikan ukuran gambar dengan layar */
+    background-position: center; /* Menentukan posisi gambar di tengah layar */
+}
+
+/* Header styles */
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+/* Tampilan login dan register */
+.auth-links-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Untuk menggeser ke kanan */
+    margin-top: 20px; /* Memberi jarak atas */
+    margin-right: 20px; /* Mengatur margin kanan */
+}
+
+/* Memperbesar link login dan register */
+.auth-link {
+    display: inline-block;
+    color: #3a3737;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.45);
+    padding: 10px 20px; /* Menyesuaikan padding */
+    font-size: 14px; /* Memperbesar ukuran font */
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #636b6f;
+    border-radius: 8px; /* Menyesuaikan border radius */
+    transition: background-color 0.3s ease;
+}
+
+.auth-link:hover {
+    background-color: #636b6f;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(108, 108, 108, 0.45);
+    border: 1px solid #636b6f;
+}
+
+/* Memberi efek transparan pada hover */
+.auth-link:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+
+/* Centering content */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+ /* Estetika untuk teks "Welcome" */
+ .title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(69, 68, 68, 0.3);
+    /* Jika ingin menambahkan efek lain, seperti gradient, bisa juga ditambahkan di sini */
+
+    animation: welcome-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes welcome-animation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Estetika untuk kalimat-kalimat playlist */
+.playlist-words p {
+    font-size: 25px;
+    margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+    text-align: center;
+    /* Jika ingin memberikan efek lain, seperti underline, bisa ditambahkan di sini */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.playlist-words p:hover {
+    color: #ff1100; /* Ganti dengan warna yang diinginkan */
+    text-shadow: 2px 2px 4px rgba(122, 122, 122, 0.45);
+    transform: scale(1.1); /* Atau tambahkan efek lain saat di-hover */
+}
+
+.explore-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Memperbesar link login dan register */
+.explore-link {
+    display: inline-block;
+    color: #fffefe;
+    text-shadow: 2px 2px 4px rgba(212, 209, 209, 0.45);
+    padding: 12px 25px; /* Lebih besar padding */
+    font-size: 14px; /* Memperbesar ukuran font */
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #9d9e9f;
+    border-radius: 8px; /* Menyesuaikan border radius */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-link:hover {
+    background-color: #636b6f;
+    color: #fff;
+    border: 1px solid #272727;
+    transform: translateY(-3px); /* Menggeser ke atas sedikit saat di-hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan saat di-hover */
+}
