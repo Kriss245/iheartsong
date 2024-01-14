@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/aKQH3yO.png" width="500"></p>
+<p align="center"><img src="https://i.imgur.com/aKQH3yO.png" width="350"></p>
 
 ## IHEARTSONG - WEBSITE MANAJEMEN PLAYLIST MUSIK
 
@@ -53,7 +53,7 @@ Dalam perancangan website ini, kami menggunakan PHP versi 7.4 dan Framework Lara
 
 Kemudian, Silahkan buka browser dan ketikkan: http://localhost:8000
 
-Email : kristianabel@gmail.com
+Email Adress: kristianabel@gmail.com
 Password : abel123
 
 ## Dikembangkan Oleh
